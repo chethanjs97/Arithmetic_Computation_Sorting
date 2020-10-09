@@ -11,3 +11,14 @@ res3=$(($c+($a/$b)))
 echo $res3
 res4=$(($a%($b+$c)))
 echo $res4
+
+declare -A array
+j=1
+for i in res1 res2 res3 res4
+do
+	array[$j]=$i
+	((j++)) 
+
+done
+echo ${array[@]}
+echo ${!array[@]}
