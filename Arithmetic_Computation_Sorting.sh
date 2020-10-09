@@ -32,3 +32,6 @@ echo ${array1[@]}
 
 arr=($(for i in "${array[@]}"; do echo $i;done | sort -nr))
 echo "descending order" ${arr[@]}
+
+arr=($(for i in "${array[@]}"; do echo $i;done | sort -n))
+echo "ascending order" ${arr[@]}
